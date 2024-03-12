@@ -8,6 +8,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <GitExpertApp />
   </React.StrictMode>
 )
-
-
-/* API Key: LPdsZifuMGRdDe2XXpD4hC4haoXlxY9o*/
