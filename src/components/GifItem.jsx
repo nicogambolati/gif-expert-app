@@ -13,8 +13,3 @@ GifItem.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired
 }
-
-GifItem.defaultProps = {
-  title: 'Dragon Ball Z',
-  url: null
-}
