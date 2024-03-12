@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 export const GifGrid = ({ category }) => {
   const { images, isLoading } = useFetchGifts(category);
-  console.log({ isLoading });
 
   return (
     <>

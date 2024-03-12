@@ -17,7 +17,6 @@ export const AddCategory = ({ onNewCategory }) => {
      ** Chequea que haya mas de un  caracter
      **/
     if (inputValue.trim().length <= 1) return;
-    console.log(inputValue);
 
     /**
      ** Todas las categorias en el estado actual,

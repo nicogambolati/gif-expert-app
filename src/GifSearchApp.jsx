@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AddCategory, GifGrid } from './components';
 
-export const GitExpertApp = () => {
+export const GifSearchApp = () => {
   const [categories, setCategories] = useState(["Dragon Ball Z"]);
 
   const onAddCategory = (newCategory) => {
@@ -11,7 +11,7 @@ export const GitExpertApp = () => {
 
   return (
     <>
-      <h1>GitExpertApp</h1>
+      <h1>Gif Search App</h1>
 
       <AddCategory onNewCategory={(event) => onAddCategory(event)} />
 
