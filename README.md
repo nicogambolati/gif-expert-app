@@ -1,8 +1,25 @@
-# React + Vite
+# Gif Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple app for searching and displaying gifs.
 
-Currently, two official plugins are available:
+## Pre-requisitos
+It is suggested to use Node version `v20.11.1`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/nicogambolati/gif-expert-app
+2. Install dependencies with `npm install`
+3. Run the app with `npm run dev`
+
+## Usage
+
+* Enter a search term in the input field to search for gifs.
+
+## Screenshots.
+### Mobile (Iphone 14 Pro Max):
+[![mobile-gif-Search-App.png](https://i.postimg.cc/K87JCjG1/mobile-gif-Search-App.png)](https://postimg.cc/K1zPMZgb)
+
+### Desktop (Resolucion: 1440px):
+[![desktop-gif-Search-App.png](https://i.postimg.cc/WzM5j1GY/desktop-gif-Search-App.png)](https://postimg.cc/rRw1NcY5)
