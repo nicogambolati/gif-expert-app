@@ -13,6 +13,10 @@ It is suggested to use Node version `v20.11.1`.
 2. Install dependencies with `npm install`
 3. Run the app with `npm run dev`
 
+## Deploy
+
+The project is deployed and accessible [here](https://gif-search-app-ng.netlify.app/)
+
 ## Usage
 
 * Enter a search term in the input field to search for gifs.
