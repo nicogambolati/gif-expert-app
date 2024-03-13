@@ -18,7 +18,7 @@ describe("test in <AddCategory />", () => {
     // screen.debug();
   });
 
-  test("debe de llamar  onNewCategory si el input tiene valor", () => {
+  test("Must call onNewCategory if the input has a value", () => {
     const inputValue = "Saitama";
     const onNewCategory = jest.fn(); // jest funtion => Simula una la funcion
 
@@ -42,7 +42,7 @@ describe("test in <AddCategory />", () => {
     expect(onNewCategory).toHaveBeenCalledWith(inputValue);
   });
 
-  test("no debe llamar a onNewCategory si el input esta vacio", () => {
+  test("Should not call New Category if the input is empty", () => {
     const onNewCategory = jest.fn();
 
     render(<AddCategory onNewCategory={onNewCategory} />);
