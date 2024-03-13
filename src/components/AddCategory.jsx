@@ -2,48 +2,39 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 export const AddCategory = ({ onNewCategory }) => {
-  const [inputValue, setInputValue] = useState("One Punch");
+  const [inputValue, setInputValue] = useState('');
 
-  /**
-   ** Siempre estoy recibiendo el event,despues lo Desestructuramos
-   **/
+  // Estoy recibiendo el event, despues lo Desestructuro
   const onInputChange = ({ target }) => {
     setInputValue(target.value);
   };
 
   const onSubmit = (event) => {
     event.preventDefault();
-    /**
-     ** Chequea que haya mas de un  caracter
-     **/
+    // Chequea que haya mas de un  caracter
     if (inputValue.trim().length <= 1) return;
 
-    /**
-     ** Todas las categorias en el estado actual,
-     ** insertamos el nuevo inputValue seguido de la desestructuracion de las categorias anteriores
-     **/
+    // Todas las categorias en el estado actual,
+    // e inserto el nuevo inputValue seguido de la desestructuracion de las categorias anteriores
+
     // setCategories((categories) => [inputValue, ...categories]);
     onNewCategory(inputValue.trim());
     setInputValue("");
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} aria-label="form">
       <input
         type="test"
         placeholder="Buscar gifs"
+        value={inputValue}
         onChange={onInputChange}
-        // value={inputValue}
-        //   onChange={(event) => onInputChange(event)}
+        // Es lo mismo que: onChange={(event) => onInputChange(event)}
       />
     </form>
   );
 };
 
 AddCategory.prototypes = {
-  onNewCategory: PropTypes.func.isRequired
-};
-
-AddCategory.defaultProps = {
-  onNewCategory: () => {}
+  onNewCategory: PropTypes.func.isRequired,
 };
