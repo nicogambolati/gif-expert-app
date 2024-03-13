@@ -12,7 +12,7 @@ describe("test in <AddCategory />", () => {
     // Disparo el evento
     fireEvent.input(input, { target: { value: "Saitama" } });
 
-    // Hago la sesion de lo que estoy esperando que suceda despues del evento
+    // Hago la acepcion de lo que estoy esperando que suceda despues del evento
     expect(input.value).toBe("Saitama");
 
     // screen.debug();

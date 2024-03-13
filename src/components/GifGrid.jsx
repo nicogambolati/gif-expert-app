@@ -1,9 +1,9 @@
-import { GifItem } from './GifItem';
-import { useFetchGifts } from '../hooks/useFetchGifts';
 import PropTypes from 'prop-types';
+import { GifItem } from './GifItem';
+import { useFetchGifs } from '../hooks/useFetchGifs';
 
 export const GifGrid = ({ category }) => {
-  const { images, isLoading } = useFetchGifts(category);
+  const { images, isLoading } = useFetchGifs(category);
 
   return (
     <>
@@ -30,8 +30,4 @@ export const GifGrid = ({ category }) => {
 
 GifGrid.propTypes = {
   category: PropTypes.string.isRequired,
-};
-
-GifGrid.defaultProps = {
-  category: 'Dragon Ball Z',
 };
