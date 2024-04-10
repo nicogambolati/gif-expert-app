@@ -2,7 +2,7 @@
 
 This is a simple app for searching and displaying gifs.
 
-## Pre-requisitos
+## Pre requirements
 It is suggested to use Node version `v20.11.1`.
 
 ## Installation
